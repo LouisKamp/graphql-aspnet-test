@@ -27,7 +27,7 @@ namespace dotnetgraphql
             services.AddGraphQL();
             services.AddDbContext<BloggingContext>(
                 options => options
-                            .UseSqlite(@"Data Source=/Users/louiss/code/dotnetgraphql/blogging.db")
+                            .UseSqlite(@"Data Source=./blogging.db")
                             .UseLazyLoadingProxies()
             );
         }
